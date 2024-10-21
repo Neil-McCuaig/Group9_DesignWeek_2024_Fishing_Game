@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f8b81c451c36be408b035cb18bab01b, type: 3}
+  m_Name: CommonLoot
+  m_EditorClassIdentifier: 
+  _lootTier: 0
+  _lootType: 0
+  _weightRange:
+    _minWeight: 0.2
+    _maxWeight: 0.7
+  _lootRarity: 60
+  _lootName: Example Common Loot
+  _lootDescription: Example Common Loot Description
+  _lootPrefab: {fileID: 1145367070406165406, guid: 6742c8a267215e54d8e345aae244f689, type: 3}
