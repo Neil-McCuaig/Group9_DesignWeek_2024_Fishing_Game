@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f8b81c451c36be408b035cb18bab01b, type: 3}
+  m_Name: EpicLoot
+  m_EditorClassIdentifier: 
+  _lootTier: 3
+  _lootType: 1
+  _weightRange:
+    _minWeight: 2
+    _maxWeight: 6
+  _lootRarity: 15
+  _lootName: Example Epic Loot
+  _lootDescription: Example Epic Loot Description
+  _lootPrefab: {fileID: 190779957205749762, guid: 1ab59e142a3d1264c8865babeb7aa4d6, type: 3}
