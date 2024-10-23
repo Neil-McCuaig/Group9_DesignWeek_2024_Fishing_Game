@@ -7,7 +7,7 @@ using UnityEngine.SocialPlatforms.Impl;
 
 public class GameManager : MonoBehaviour
 {
-    //300 for five minutes. Set it to 10 for a ten second test.
+    //Does not actually effect the in Unity time. 300 for five minutes. Set it to 10 in unity for a ten second test.
     public float timeRemaining = 300f;
 
 
