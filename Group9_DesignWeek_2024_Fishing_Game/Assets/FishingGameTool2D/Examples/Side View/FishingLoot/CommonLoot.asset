@@ -20,4 +20,4 @@ MonoBehaviour:
   _lootRarity: 60
   _lootName: Example Common Loot
   _lootDescription: Example Common Loot Description
-  _lootPrefab: {fileID: 1145367070406165406, guid: 6742c8a267215e54d8e345aae244f689, type: 3}
+  _lootPrefab: {fileID: 7772330139837058567, guid: cbb46e27f682a4417b56d163eeef7663, type: 3}

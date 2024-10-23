@@ -17,7 +17,7 @@ MonoBehaviour:
   _weightRange:
     _minWeight: 1
     _maxWeight: 3
-  _lootRarity: 45
+  _lootRarity: 55
   _lootName: Example Uncommon Loot
   _lootDescription: Example Uncommon Loot Description
-  _lootPrefab: {fileID: 190779957205749762, guid: 1ab59e142a3d1264c8865babeb7aa4d6, type: 3}
+  _lootPrefab: {fileID: 680792375494616937, guid: 8ae9e0ad5a28b40e49a2f9ddb845fbca, type: 3}
