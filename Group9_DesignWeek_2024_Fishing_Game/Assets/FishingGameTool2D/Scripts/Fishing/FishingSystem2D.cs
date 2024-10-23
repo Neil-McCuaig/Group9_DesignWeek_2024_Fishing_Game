@@ -22,8 +22,8 @@ namespace FishingGameTool2D.Fishing
     public enum CastDir
     {
         left,
-        right, 
-        top, 
+        right,
+        top,
         down
     };
 
@@ -183,7 +183,7 @@ namespace FishingGameTool2D.Fishing
 
         private void Update()
         {
-            if(_fishingRod != null)
+            if (_fishingRod != null)
             {
                 AttractFloat();
                 CastFloat();
@@ -207,7 +207,7 @@ namespace FishingGameTool2D.Fishing
             else
                 _startChecking = true;
 
-            if(!_advanced._caughtLoot)
+            if (!_advanced._caughtLoot)
                 _substrateType = _fishingRod._fishingFloat.GetComponent<FishingFloat2D>().CheckSurface(_fishingLayer, _startChecking);
 
             if (_substrateType == SubstrateType.Water)
@@ -215,14 +215,14 @@ namespace FishingGameTool2D.Fishing
 
             LineLengthLimitation(_fishingRod._fishingFloat.gameObject, transform.position, _fishingRod._lineStatus, _substrateType);
 
-            if(_attractInput && _substrateType == SubstrateType.InAir && !_advanced._caughtLoot)
+            if (_attractInput && _substrateType == SubstrateType.InAir && !_advanced._caughtLoot)
             {
                 AttractInAir();
                 return;
             }
             else if (_attractInput && _substrateType == SubstrateType.Land && !_advanced._caughtLoot)
             {
-                if(AttractOnLand())
+                if (AttractOnLand())
                     return;
             }
             else if (_attractInput && _substrateType == SubstrateType.Water && !_advanced._caughtLoot)
@@ -550,7 +550,7 @@ namespace FishingGameTool2D.Fishing
             return lootRarityList;
         }
 
-        private void AttractWithLoot(FishingLootData lootData, Transform fishingFloatTransform, Vector2 transformPosition, LayerMask fishingLayer, LayerMask fishingFloatLayer, 
+        private void AttractWithLoot(FishingLootData lootData, Transform fishingFloatTransform, Vector2 transformPosition, LayerMask fishingLayer, LayerMask fishingFloatLayer,
             bool attractInput, float lootWeight, FishingRod2D fishingRod, GameViewType gameViewType)
         {
             Vector2 fishingFloatPosition = fishingFloatTransform.position;
@@ -559,7 +559,7 @@ namespace FishingGameTool2D.Fishing
             float attractSpeed = CalculateAttractSpeed(fishingRod, attractInput, lootWeight, (int)lootData._lootTier);
             _finalSpeed = Mathf.Lerp(_finalSpeed, attractInput == true ? CalculateFinalAttractSpeed(lootSpeed, attractSpeed, lootData) : lootSpeed, 3f * Time.deltaTime);
 
-            _fishingFloatPathfinder2D.FloatBehavior(lootData, fishingFloatTransform, transformPosition, fishingRod._lineStatus._maxLineLength, _finalSpeed, attractInput, 
+            _fishingFloatPathfinder2D.FloatBehavior(lootData, fishingFloatTransform, transformPosition, fishingRod._lineStatus._maxLineLength, _finalSpeed, attractInput,
                 fishingLayer, fishingFloatLayer, gameViewType);
 
             //Debug.Log("Loot Speed: " + lootSpeed + " | Attract Speed: " + attractSpeed + " | Final Speed: " + _finalSpeed);
@@ -647,13 +647,13 @@ namespace FishingGameTool2D.Fishing
 
             if (_castInput)
             {
-                if(_gameViewType == GameViewType.SideView)
+                if (_gameViewType == GameViewType.SideView)
                     _currentCastForce = CalculateCastForce(_currentCastForce, _maxCastForce, _forceChargeRate);
                 else
                     _currentCastTime = CalculateCastForce(_currentCastTime, _maxCastTime, _timeChargeRate);
             }
 
-            if ((!_castInput && (_gameViewType == GameViewType.SideView ? _currentCastForce != 0f : _currentCastTime != 0f)) || 
+            if ((!_castInput && (_gameViewType == GameViewType.SideView ? _currentCastForce != 0f : _currentCastTime != 0f)) ||
                 ((_gameViewType == GameViewType.SideView ? _currentCastForce : _currentCastTime) >= _maxCastForce))
             {
                 Vector2 spawnPoint = _fishingRod._line._lineAttachment.position;
@@ -686,7 +686,7 @@ namespace FishingGameTool2D.Fishing
                         break;
                 }
 
-                StartCoroutine(CastingDelay(_spawnFloatDelay, castDirection, spawnPoint, _gameViewType == GameViewType.SideView ? _currentCastForce : 
+                StartCoroutine(CastingDelay(_spawnFloatDelay, castDirection, spawnPoint, _gameViewType == GameViewType.SideView ? _currentCastForce :
                     (_currentCastTime * _initialForce), _fishingFloatPrefab));
 
                 _saveCurrentCastTime = _currentCastTime;
@@ -714,7 +714,7 @@ namespace FishingGameTool2D.Fishing
         {
             GameObject spawnedFishingFloat = Instantiate(fishingFloatPrefab, spawnPoint, Quaternion.identity);
 
-            if(_gameViewType == GameViewType.TopDownView)
+            if (_gameViewType == GameViewType.TopDownView)
                 spawnedFishingFloat.GetComponent<CircleCollider2D>().enabled = false;
 
             spawnedFishingFloat.GetComponent<Rigidbody2D>().AddForce(castDirection * castForce, ForceMode2D.Impulse);

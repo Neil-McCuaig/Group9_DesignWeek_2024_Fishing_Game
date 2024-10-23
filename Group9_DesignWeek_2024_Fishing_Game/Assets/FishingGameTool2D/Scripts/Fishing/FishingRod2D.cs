@@ -92,7 +92,7 @@ namespace FishingGameTool2D.Fishing.Rod
 
         private Transform CheckFishingFloatRepresentation(Transform fishingFloat)
         {
-            if(fishingFloat.childCount != 0)
+            if (fishingFloat.childCount != 0)
             {
                 return fishingFloat.GetChild(0);
             }
@@ -181,7 +181,7 @@ namespace FishingGameTool2D.Fishing.Rod
                         _lineStatus._isLineBroken = true;
 
                     FishingSystem2D[] fishingSystem2D = FindObjectsOfType<FishingSystem2D>();
-                    
+
                     if (fishingSystem2D.Length > 1)
                         Debug.LogWarning("There is more than one object on the scene containing the Fishing System 2D component. " +
                             "Please remove the other components containing Fishing System 2D!");
