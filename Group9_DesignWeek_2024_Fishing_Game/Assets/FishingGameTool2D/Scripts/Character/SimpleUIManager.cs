@@ -59,7 +59,7 @@ namespace FishingGameTool2D.Example
 
         [BetterHeader("UI Settings", 20)]
         public FishingSystem2D _fishingSystem;
-        public Text _lootInfoText;
+        //public Text _lootInfoText;
         public GameObject _FGTMenu;
         [Space]
         public FishingLineLoadBar _fishingLineLoadBar;
@@ -87,6 +87,9 @@ namespace FishingGameTool2D.Example
 
         private void ControlMenu()
         {
+            if (_FGTMenu == null)
+                return;
+
             if (Input.GetKeyDown(KeyCode.Tab))
                 _showMenu = !_showMenu;
 
@@ -129,14 +132,14 @@ namespace FishingGameTool2D.Example
             if (!_fishingSystem._advanced._caughtLoot)
             {
                 _fishingLineLoadBar._UIObject.SetActive(false);
-                _lootInfoText.gameObject.SetActive(false);
+                //_lootInfoText.gameObject.SetActive(false);
                 return;
             }
 
-            _lootInfoText.gameObject.SetActive(true);
+            //_lootInfoText.gameObject.SetActive(true);
             _fishingLineLoadBar._UIObject.SetActive(true);
 
-            ShowLootInfo(_fishingSystem._advanced._caughtLootData, _lootInfoText);
+            //ShowLootInfo(_fishingSystem._advanced._caughtLootData, _lootInfoText);
 
             float loadProgress = CalculateProgess(_lineStatus._currentLineLoad, _lineStatus._maxLineLoad);
 
