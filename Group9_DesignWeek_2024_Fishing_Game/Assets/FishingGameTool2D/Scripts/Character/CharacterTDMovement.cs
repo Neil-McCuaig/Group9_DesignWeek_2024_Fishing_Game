@@ -9,6 +9,7 @@ namespace FishingGameTool2D.Example
         public float _moveSpeed = 5f;
         public Transform _fishingRodHolder;
 
+
         #region PRIVATE VARIABLES
 
         private Vector2 _inputMove;
