@@ -17,7 +17,7 @@ MonoBehaviour:
   _weightRange:
     _minWeight: 1
     _maxWeight: 3
-  _lootRarity: 40
+  _lootRarity: 60
   _lootName: Example Legendary Loot
   _lootDescription: Example Legendary Loot Description
   _lootPrefab: {fileID: 7650730272069098793, guid: 4a34f98a766514a1d901d4b07914d188, type: 3}

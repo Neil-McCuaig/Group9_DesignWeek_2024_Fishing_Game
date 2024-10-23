@@ -17,7 +17,7 @@ MonoBehaviour:
   _weightRange:
     _minWeight: 2
     _maxWeight: 6
-  _lootRarity: 45
+  _lootRarity: 60
   _lootName: Example Epic Loot
   _lootDescription: Example Epic Loot Description
   _lootPrefab: {fileID: 1857995442583154676, guid: e173b7005f76d49e9a2c8e2d87e8d169, type: 3}
