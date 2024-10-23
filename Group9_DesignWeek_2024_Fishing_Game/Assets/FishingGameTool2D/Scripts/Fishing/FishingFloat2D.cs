@@ -43,7 +43,7 @@ namespace FishingGameTool2D.Fishing.Float
 
         private GameObject _waterObject;
         private Rigidbody2D _flaotRB;
-        private CircleCollider2D _floatCollider;
+        public CircleCollider2D _floatCollider;
 
         private void Start()
         {
