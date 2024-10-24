@@ -1194,7 +1194,7 @@ MonoBehaviour:
   _fishingLayer:
     serializedVersion: 2
     m_Bits: 512
-  _bait: {fileID: 11400000, guid: ca7a3a9c93c0b5040a94537868afe2de, type: 2}
+  _bait: {fileID: 11400000, guid: 3be9377d8539dd840bc5622e842bb9ca, type: 2}
   _fishingFloatPrefab: {fileID: 5963905991977317444, guid: ae640b8cc5515344ba345d01ea99a214, type: 3}
   _enableAttractionPointCorrection: 1
   _attractionPointCorrection: {x: 0, y: -0.76}
@@ -1213,7 +1213,7 @@ MonoBehaviour:
   _timeChargeRate: 0.3
   _initialForce: 10
   _currentCastTime: 0
-  _spawnFloatDelay: 0.3
+  _spawnFloatDelay: 0.1
   _catchDistance: 2
   _enableInvokes: 0
   _showEvents: 0
