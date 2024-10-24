@@ -732,8 +732,8 @@ namespace FishingGameTool2D.Fishing
 
         private void HandleInput()
         {
-            _attractInput = Input.GetButton("Fire2");
-            _castInput = Input.GetButton("Fire1");
+            _attractInput = Input.GetKey(KeyCode.N);
+            _castInput = Input.GetKey(KeyCode.B);
         }
 
         public void ForceStopFishing()
