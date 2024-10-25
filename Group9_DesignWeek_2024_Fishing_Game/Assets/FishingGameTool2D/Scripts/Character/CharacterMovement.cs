@@ -15,6 +15,8 @@ namespace FishingGameTool2D.Example
         public Vector2 _groundCheckerPos;
         public LayerMask _groundMask;
 
+        public GameManager gameManager;
+
         #region PRIVATE VARIABLES
 
         private Rigidbody2D _characterRB;
@@ -88,6 +90,15 @@ namespace FishingGameTool2D.Example
         {
             _inputMove = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
             _inputJump = Input.GetButtonDown("Jump");
+        }
+
+        void OnTriggerEnter2D(Collider2D other)
+        {
+            if (other.gameObject.CompareTag("Fish"))
+            {
+                Destroy(other.gameObject);
+                gameManager.counterFish++;
+            }
         }
 
 #if UNITY_EDITOR

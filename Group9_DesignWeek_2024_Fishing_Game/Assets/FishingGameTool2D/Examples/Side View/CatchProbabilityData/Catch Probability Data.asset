@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d1ea20585a296743ab01b667dacf0e3, type: 3}
   m_Name: Catch Probability Data
   m_EditorClassIdentifier: 
-  _commonProbability: 1
-  _uncommonProbability: 1
-  _rareProbability: 1
-  _epicProbability: 1
-  _legendaryProbability: 1
+  _commonProbability: 2
+  _uncommonProbability: 2
+  _rareProbability: 2
+  _epicProbability: 2
+  _legendaryProbability: 2
   _minSafeFishingDistanceFactor: 5
