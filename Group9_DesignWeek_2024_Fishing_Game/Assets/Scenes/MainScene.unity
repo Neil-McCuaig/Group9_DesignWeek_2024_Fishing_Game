@@ -1760,14 +1760,14 @@ MonoBehaviour:
     m_Bits: 64
   _topdownViewCastSettings: 0
   _sideViewCastSettings: 1
-  _maxCastForce: 5.5
+  _maxCastForce: 6.2
   _forceChargeRate: 4
   _currentCastForce: 0
   _maxCastTime: 2
   _timeChargeRate: 0.3
   _initialForce: 10
   _currentCastTime: 0
-  _spawnFloatDelay: 0.1
+  _spawnFloatDelay: 0.5
   _catchDistance: 3
   _enableInvokes: 0
   _showEvents: 0

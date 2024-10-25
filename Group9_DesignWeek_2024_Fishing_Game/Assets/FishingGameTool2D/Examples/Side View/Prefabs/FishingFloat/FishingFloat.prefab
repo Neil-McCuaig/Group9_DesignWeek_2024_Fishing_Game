@@ -198,8 +198,8 @@ MonoBehaviour:
     m_Bits: 64
   _excludeDetectionLayerMask:
     serializedVersion: 2
-    m_Bits: 161
-  _checkerRadius: 0.09
+    m_Bits: 289
+  _checkerRadius: 0.13
   _enableFloatAnim: 1
   _fishingFloatAnimationSettings:
     _floatRepresentation: {fileID: 626489612633233623}
