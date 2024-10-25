@@ -749,7 +749,7 @@ MonoBehaviour:
     _attractFloatSpeed: 0
     _isLineBroken: 0
   _isLineBreakable: 0
-  _baseAttractSpeed: 5
+  _baseAttractSpeed: 30
   _fishingAngle: 60
   _showDebugOption: 1
   _fishingFloat: {fileID: 0}
